@@ -39,7 +39,7 @@ def new_post():
         if title == "":
             title_error = "Please fill in the title."
         if body == "":
-            body_error = "Please fill in the title."
+            body_error = "Please fill in the body."
         if len(title) > 0 and len(body) > 0:
             new_post = Blog(title, body)
             db.session.add(new_post)
